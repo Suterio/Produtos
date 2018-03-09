@@ -46,9 +46,9 @@ public	class	Produto   {
     public void verificcaMargem(){
         double valorMargem = (this.custo * 1.20);
         if(this.valor >= valorMargem){
-            System.out.println("Margem maior ou igual a 20 por cento");
+            System.out.println("Margem maior ou igual a 20 %");
         } else {
-            System.out.println("Margem menor do que 20 por cento");
+            System.out.println("Margem menor do que 20 %");
         }
     }
 
