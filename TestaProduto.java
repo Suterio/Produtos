@@ -2,16 +2,17 @@ public	class	TestaProduto    {
 	public	static 	void	main (String args[]){
 
     Produto testaProduto = new Produto();
-    testaProduto.setCodigo(args[0]);
-    testaProduto.setDescricao(args[1]);
-    testaProduto.setCusto(Double.parseDouble(args[2]));
-    testaProduto.setValor(Double.parseDouble(args[3]));
-
+    
+    
     testaProduto.mostraProduto();
-
-    testaProduto.verificcaMargem();
-
-    testaProduto.verificaMargem();
+    
+    Produto testaProduto2 = new Produto("C4321","Produto1");
+    
+    testaProduto2.mostraProduto();
+    Produto testaProduto3 = new Produto("CB12351","Produto5",7000.00,700.00);
+    
+    testaProduto3.mostraProduto();
+    
 
     }
 }

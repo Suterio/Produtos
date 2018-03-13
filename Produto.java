@@ -4,6 +4,26 @@ public	class	Produto   {
     private double custo = 0.00;
     private double valor = 0.00 ;
 
+    public Produto(){}
+    
+    public Produto(String c, String d ){
+        this.codigo = c;
+        this.descricao = d;  
+    }
+    
+   
+    public Produto(String c, String d, double cs, double v ){
+        this.codigo = c;
+        this.descricao = d;
+        this.custo = cs;
+        this.valor = v;    
+        if(!this.verificaMargem()){
+            throw new IllegalArgumentException("Margem inválida");
+        }
+        
+
+    }
+    
 
     public String getCodigo(){
             return this.codigo;
