@@ -9,10 +9,14 @@ public	class	TestaProduto    {
     Produto testaProduto2 = new Produto("C4321","Produto1");
     
     testaProduto2.mostraProduto();
-    Produto testaProduto3 = new Produto("CB12351","Produto5",7000.00,700.00);
+    try {
+        
+        Produto testaProduto3 = new Produto("CB12351","Produto5",7000.00,700.00);
     
-    testaProduto3.mostraProduto();
-    
+        testaProduto3.mostraProduto();
+    }catch(IllegalArgumentException e){
+        System.out.println(e.getMessage());
+    }    
 
     }
 }
